@@ -1,0 +1,2 @@
+this is data variable which is added to reply.txt file 
+this is new line appended to replay text file
