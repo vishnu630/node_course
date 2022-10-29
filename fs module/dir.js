@@ -5,7 +5,7 @@ if (!fs.existsSync('./new')){
         if (err) throw err;
         console.log("dir created")
     })
-}
+} 
 else{
     console.log("the dir is already existing")
 }
