@@ -7,7 +7,7 @@ const server = http.createServer((req,res)=>{
         res.end()
     }
     if(req.url === '/about'){
-        res.end('this is new page')
+        res.end('this is new  page')
     }
 })
 

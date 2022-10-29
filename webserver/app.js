@@ -30,7 +30,6 @@ server.on('server',(req,res)=>{
     const val='<h1> this is my page</h1>'
     res.end(val)
 })
-
 server.listen(5000,()=>{
-    console.log('listining on port 5000')
+    console.log('listining on port 5000 ')
 })

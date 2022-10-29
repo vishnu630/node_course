@@ -8,7 +8,7 @@ const mul=(a,b)=>{
     return a*b
 }
 const divd=(a,b)=>{
-    return a/b
+    return a/b;
 }
 
 module.exports= {add,sub,mul,divd}

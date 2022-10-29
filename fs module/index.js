@@ -10,7 +10,7 @@ fs.readFile(path.join(__dirname,'files','starter.txt'),'utf8',(err,data)=>{
 
 console.log('hello')
 
-const data='this is data variable which is added to reply.txt file '
+const data='this is a string variable which is added to reply.txt file '
 
 fs.writeFile(path.join(__dirname,'files','replay.txt'), data,(err)=>{
     if (err) throw err;
