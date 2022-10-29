@@ -27,8 +27,12 @@ app.get('/products/:id',(req,res)=>{
 
 })
 
-app.get('/products/query',(req,res)=>{
+app.get('/products/:query',(req,res)=>{
 console.log(req.params)
+const product =products.map((ele)=>{
+    return ele.id === Number(req.params.query)
+})
+res.json(product)
 })
 
 app.post('/api/products',(req,res)=>{
