@@ -3,6 +3,8 @@ const express =require('express')
 const {products}=require('./data')
 const app =express()
 
+const port = process.env.PORT || 5000
+
 app.get('/',(req,res)=>{
     res.send('<h1> this is home page</h1> <a href="/api/products">products</a>')
 })
@@ -39,7 +41,7 @@ app.post('/api/products',(req,res)=>{
 
     
 })
-app.listen(5000,()=>{
+app.listen(port,()=>{
     console.log('server running on 5000')
 })
 console.log(db.version())
